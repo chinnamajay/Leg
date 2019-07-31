@@ -1,99 +1,22 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@chinnamajay 
-2
-16 12 nicholaskajoh/faceclone-html-template
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
-faceclone-html-template/index.html
-@nicholaskajoh nicholaskajoh initial commit
-f18a2dd on May 27, 2017
-81 lines (70 sloc)  2.39 KB
-    
 <!DOCTYPE html>
 <html>
-<head>
-  <title>FaceClone</title>
-
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
 <body>
-  <!-- nav -->
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">FaceClone</a>
-      </div>
-    </div>
-  </nav>
-  <!-- ./nav -->
 
-  <!-- main -->
-  <main class="container">
-  <h1 class="text-center">Welcome to FaceClone! <br><small>A simple Facebook clone.</small></h1>
+<h1>My First Google Map</h1>
 
-    <div class="row">
-      <div class="col-md-6">
-        <h4>Login to start enjoying unlimited fun!</h4>
+<div id="googleMap" style="width:100%;height:400px;"></div>
 
-        <!-- login form -->
-        <form method="post" action="home.html">
-          <div class="form-group">
-            <input class="form-control" type="text" name="username" placeholder="Username">
-          </div>
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
 
-          <div class="form-group">
-            <input class="form-control" type="password" name="password" placeholder="Password">
-          </div>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 
-          <div class="form-group">
-            <input class="btn btn-primary" type="submit" name="login" value="Login">
-          </div>
-        </form>
-        <!-- ./login form -->
-      </div>
-      <div class="col-md-6">
-        <h4>Don't have an account yet? Register!</h4>
-
-        <!-- register form -->
-        <form method="post" action="home.html">
-          <div class="form-group">
-            <input class="form-control" type="text" name="username" placeholder="Username">
-          </div>
-
-          <div class="form-group">
-            <input class="form-control" type="text" name="location" placeholder="Location">
-          </div>
-
-          <div class="form-group">
-            <input class="form-control" type="password" name="password" placeholder="Password">
-          </div>
-
-          <div class="form-group">
-            <input class="btn btn-success" type="submit" name="register" value="Register">
-          </div>
-        </form>
-        <!-- ./register form -->
-      </div>
-    </div>
-  </main>
-  <!-- ./main -->
-
-  <!-- footer -->
-  <footer class="container text-center">
-    <ul class="nav nav-pills pull-right">
-      <li>FaceClone - Made by [your name here]</li>
-    </ul>
-  </footer>
-  <!-- ./footer -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

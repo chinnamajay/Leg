@@ -8,7 +8,7 @@ div {padding:10px;}
 <h1>Colors can be set using color names</h1>
 
 <div style="background-color:red">
-  <h1 style="color:white">Heading</h1>
+  <h1 style="color:white">Aj</h1>
 </div>
 
 <div style="background-color:yellow">

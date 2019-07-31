@@ -1,23 +1,99 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@chinnamajay 
+2
+16 12 nicholaskajoh/faceclone-html-template
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
+faceclone-html-template/index.html
+@nicholaskajoh nicholaskajoh initial commit
+f18a2dd on May 27, 2017
+81 lines (70 sloc)  2.39 KB
+    
 <!DOCTYPE html>
 <html>
-<style>
-div {padding:10px;}
-</style>
+<head>
+  <title>FaceClone</title>
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 <body>
+  <!-- nav -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">FaceClone</a>
+      </div>
+    </div>
+  </nav>
+  <!-- ./nav -->
 
-<h1>Colors can be set using color names</h1>
+  <!-- main -->
+  <main class="container">
+  <h1 class="text-center">Welcome to FaceClone! <br><small>A simple Facebook clone.</small></h1>
 
-<div style="background-color:red">
-  <h1 style="color:white">Aj</h1>
-</div>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Login to start enjoying unlimited fun!</h4>
 
-<div style="background-color:yellow">
-  <h1 style="color:blue">Heading</h1>
-</div>
+        <!-- login form -->
+        <form method="post" action="home.html">
+          <div class="form-group">
+            <input class="form-control" type="text" name="username" placeholder="Username">
+          </div>
 
-<div style="background-color:blue">
-  <h1 style="color:yellow">Heading</h1>
-</div>
+          <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+          </div>
 
+          <div class="form-group">
+            <input class="btn btn-primary" type="submit" name="login" value="Login">
+          </div>
+        </form>
+        <!-- ./login form -->
+      </div>
+      <div class="col-md-6">
+        <h4>Don't have an account yet? Register!</h4>
+
+        <!-- register form -->
+        <form method="post" action="home.html">
+          <div class="form-group">
+            <input class="form-control" type="text" name="username" placeholder="Username">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="text" name="location" placeholder="Location">
+          </div>
+
+          <div class="form-group">
+            <input class="form-control" type="password" name="password" placeholder="Password">
+          </div>
+
+          <div class="form-group">
+            <input class="btn btn-success" type="submit" name="register" value="Register">
+          </div>
+        </form>
+        <!-- ./register form -->
+      </div>
+    </div>
+  </main>
+  <!-- ./main -->
+
+  <!-- footer -->
+  <footer class="container text-center">
+    <ul class="nav nav-pills pull-right">
+      <li>FaceClone - Made by [your name here]</li>
+    </ul>
+  </footer>
+  <!-- ./footer -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
